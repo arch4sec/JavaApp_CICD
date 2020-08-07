@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  tomcat:
+    image: 'tomcat:latest'
+    ports:
+      - '9090:9090'
+    volumes:
+      - 'tomcat_data:/tomi'
+
+volumes:
+  tomcat_data:
+    driver: local
